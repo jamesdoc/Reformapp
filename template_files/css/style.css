@@ -28,6 +28,10 @@ header{
 		height: 2em;
 	}
 	
+	.day-10 header h1{
+		background: url('../images/reformapp-text-black.png') no-repeat center center;
+	}
+	
 	.social-buttons{
 		margin-top: 1em;
 	}
@@ -83,6 +87,36 @@ section{
 			margin-top: 0;
 		}
 
+.app-banner{
+	margin-bottom: 2em;
+}
+
+	.app-banner .grid-20{
+		height: 8em;
+	}
+	
+	.app-banner .grid-60{
+		background: #ffa400;
+		height: 8em;
+	}
+	
+	.app-banner .grid-60 h2{
+		text-indent: -99999px;
+		background: url('../images/day-10-logo.png') no-repeat center center;
+		background-size: contain;
+		width: 100%;
+		height: 3em;
+		margin: 1em 0;
+	}
+	
+	.content-block{
+		margin-bottom: 2em;
+	}
+
+.quote-box{
+	padding: 2em;
+}
+
 form{
 	margin: 2em 0;
 }
@@ -136,7 +170,13 @@ form{
 			margin-top: 0.5em;
 		}
 
-#social .grid-100{
+
+	
+section#social{
+	margin-bottom: 2em;
+}
+
+.share-buttons .grid-100{
 	text-align: center;
 }
 
@@ -220,25 +260,46 @@ nav{}
 		text-decoration: none;
 	}
 
-section#sign-up h2, section#social h2, section#partners{
-	margin-top: 1em;
+h2{
+	margin: 1em 0;
 	font-size: 1.6em;
 	text-align: center;
 }
 	
-	section#social{
-		margin-bottom: 2em;
+	section#about h2{
+		margin-top: 0;
+		text-align: left;
 	}
-		
-		section#social h2{
-			margin-bottom: 1em;
-		}
 	
 @media screen and (min-width: 600px) {
 	p{
 		font-size: 1.2em;
 	}	
 }
+
+blockquote{
+	text-align: center;
+	font-size: 1.5em;
+}
+
+	blockquote .circle{
+		width: 10%;
+		margin: 0 auto 1em;
+		padding: 0.5em;
+	}
+	
+		blockquote .circle .circle{
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+	cite{
+		display: block;
+		font-style: italic;
+		font-size: 0.75em;
+		line-height: 200%;
+	}
 
 
 /* COLOURS
@@ -247,10 +308,27 @@ section#sign-up h2, section#social h2, section#partners{
 header{
 	background: url('../images/headerback-green.png') repeat-y center center;
 }
+
+	.day-10 header{
+		background: url('../images/headerback-day-10.png') repeat-y center center;
+	}
+	
+#app-sharer .grid-container{
+	background: rgb(255, 255, 255);
+	padding-bottom: 2em;
+}
+
+	.day-10 #app-sharer{
+		background: url('../images/headerback-day-10.png') repeat-y center center;
+	}
 	
 nav{
 	background: #00310a;
 }
+
+	.day-10 nav{
+		background: rgb(0, 0, 0);
+	}
 
 	nav a{
 		color: rgb(255, 255, 255);
@@ -260,6 +338,34 @@ nav{
 			color: #77b72b;
 		}
 		
+		.day-10 nav a:hover{
+			color: #ffa400;
+		}
+
+.app-banner .grid-20{
+	background-color: black;	
+}
+
+	.day-10 .app-banner .grid-20{
+		color: #ffa400;
+	}
+
+.quote-box{
+	border: 1px solid rgb(0, 0, 0);
+}
+
+	.day-10 .quote-box{
+		border: 1px solid #ffa400;
+	}
+	
+	.day-10 blockquote .circle{
+		border: 1px solid #ffa400;
+	}
+	
+	blockquote .circle .circle{
+		border: 0;
+	}
+
 section#about .grid-parent{
 	background-color: #77b72b;
 	color: #ffffff;
