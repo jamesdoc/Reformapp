@@ -8,7 +8,7 @@
 		<meta http-equiv="content-type" content="text/html;">
 		<meta name="robots" content="index,follow">
 		
-		<title>Reformapp</title>
+		<title>Reformapp: {{ name }}</title>
 		
 		<link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
 		<link href="template_files/css/unsemanticgrid.css" rel="stylesheet" type="text/css" />
@@ -41,7 +41,7 @@
 		<header>
 			<div class="grid-container">
 				
-				<h1>Reformapp: {{ name }}</h1>
+				<h1>Reformapp</h1>
 				
 				<div class="social-buttons">
 					<a href="http://twitter.com/reformapp" class="twitter" target="_blank">Follow us on Twitter</a>
@@ -74,15 +74,15 @@
 					</div>
 					
 					<div class="grid-20">
-						{% if ios %}<a href="{{ ios }}" target="_blank"><img src="template_files/images/appstore.png" alt="Download in the App Store" /></a>{% endif %}
-						{% if droid %}<a href="{{ droid }}" target="_blank"><img src="template_files/images/playstore.png" alt="Download in the App Store" /></a>{% endif %}
+						{% if ios %}<a href="{{ ios }}" target="_blank"><img src="template_files/images/appstore.png" alt="Download {{ name }} in the App Store" /></a>{% endif %}
+						{% if droid %}<a href="{{ droid }}" target="_blank"><img src="template_files/images/playstore.png" alt="Download {{ name }} in the App Store" /></a>{% endif %}
 					</div>
 				</div>
 				
 				<div class="grid-80 push-10 content-block">
-					<p>A Christian’s prayer life can be one of the toughest things we do.  We’re slow to remember what we should be thinking of, bad at remembering all those prayer requests and often so distracted by other thoughts to that spending a focused time in prayer becomes virtually impossible.</p>
-					<p>PrayerMate is a straightforward tool that helps you get organised in your prayer life. It allows you to enter your own prayer points, as well as providing a means to access requests from others - such as Operation World -  neatly categorised to suit the way that you pray.  When you open up Prayer Mate, a selection of your prayer requests are shown one at a time on cards, allowing you to pray for each subject individually. You can schedule cards by the time and date or simply let the app choose for you.   It’s simple to understand, the interface is easy on the eye to look at and intuitive to use, even for those unfamiliar with apps.</p>
-					<p>Finding time to pray is a real issue for many people in today’s busy world.  It’s tough to find the time to set apart, and harder still to remember when that was. PrayerMate is a way to help you with this.  It supports you as you try and find the time to spend in prayer, remembers those things that you forgot and presents you with the tools to easily locate subjects outside of your immediate experience to remember in your prayers.</p>
+					{% for para in content %}
+					<p>{{ para }}</p>
+					{% endfor %}
 				</div>
 				
 <!--
@@ -106,10 +106,10 @@
 						<li>
 							<blockquote>
 								<div class="circle"><div class="circle">
-									<img src="template_files/images/avatars/tc.jpg" alt="" />
+									<img src="template_files/images/avatars/{{ quote.cite_avatar }}" alt="" />
 								</div></div>
-								"I say it without hyperbole: PrayerMate revitalized my prayer life."
-								<cite>Tim Challies, <a href="http://www.challies.com/resources/how-an-app-revitalized-my-prayer-life" target="_blank">Blogger, Author, and Book Reviewer</a></cite>
+								"{{ quote.body }}"
+								<cite>{{ quote.cite_name }}, <a href="{{ quote.cite_link }}" target="_blank">{{ quote.cite_desc }}</a></cite>
 							</blockquote>
 						</li>
 					</ul>
