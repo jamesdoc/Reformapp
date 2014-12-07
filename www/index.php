@@ -17,8 +17,15 @@
 		
 		// Is the app in the app array, and are we on time?
 		if(isset($apps[$requested]) && $today >= $apps[$requested]['date']){
-		
-			print_r($apps[$requested]);
+			
+			require_once 'Twig/Autoloader.php';
+			Twig_Autoloader::register();
+			$loader = new Twig_Loader_Filesystem('template_files/html/');
+			$twig = new Twig_Environment($loader, $twig_config);
+			
+			echo $twig->render('app.htm', array('name' => 'Fabien'));
+			
+			//print_r($apps[$requested]);
 			exit();
 		
 		// Not in the array or too early... Back to the index page please
