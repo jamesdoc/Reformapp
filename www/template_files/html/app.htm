@@ -36,12 +36,12 @@
 		
 	</head>
 
-	<body class="day-10">
+	<body class="day-{{ day_no }}">
 
 		<header>
 			<div class="grid-container">
 				
-				<h1>Reformapp</h1>
+				<h1>Reformapp: {{ name }}</h1>
 				
 				<div class="social-buttons">
 					<a href="http://twitter.com/reformapp" class="twitter" target="_blank">Follow us on Twitter</a>
@@ -66,16 +66,16 @@
 				
 				<div class="grid-100 grid-parent app-banner">
 					<div class="grid-20">
-						Day 10 {{ name }}
+						Day {{ day_no }}
 					</div>
 					
 					<div class="grid-60">
-						<h2>PrayerMate</h2> 
+						<h2>{{ Name }}</h2> 
 					</div>
 					
 					<div class="grid-20">
-						<a href="#"><img src="template_files/images/appstore.png" alt="Download in the App Store" /></a>
-						<img src="template_files/images/playstore.png" alt="Download in the Google Play Store" />
+						{% if ios %}<a href="{{ ios }}" target="_blank"><img src="template_files/images/appstore.png" alt="Download in the App Store" /></a>{% endif %}
+						{% if droid %}<a href="{{ droid }}" target="_blank"><img src="template_files/images/playstore.png" alt="Download in the App Store" /></a>{% endif %}
 					</div>
 				</div>
 				
@@ -122,7 +122,7 @@
 			<div class="grid-container">
 				<div class="share-buttons">
 					<div class="grid-100">
-						<h2>Know someone who would benefit from PrayerMate?<br/>Share it with them:</h2>
+						<h2>Know someone who would benefit from {{ name }}?<br/>Share it with them:</h2>
 					</div>
 					
 					<div class="grid-100">
