@@ -1,0 +1,20 @@
+<FilesMatch "\.(htm|html|css|js|php)$">
+	AddDefaultCharset UTF-8
+	DefaultLanguage en-GB
+</FilesMatch>
+
+<Files apps.inc>
+	deny from all
+</Files>
+
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [L,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php !-f
+RewriteRule ^(.+)$ /index.php?app=$1 [L,QSA]
