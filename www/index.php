@@ -13,12 +13,21 @@
 	
 	// Right, has an app been requested?
 	if (isset($_GET['app'])) {
-		print $_GET['app'];
-		exit;
+		$requested = $_GET['app'];
+		
+		// Is the app in the app array, and are we on time?
+		if(isset($apps[$requested]) && $today >= $apps[$requested]['date']){
+		
+			print_r($apps[$requested]);
+			exit();
+		
+		// Not in the array or too early... Back to the index page please
+		} else {
+			Redirect($base_url, false);
+			exit();
+		}
+		
 	}
-	
-	
-	
 	
 	
 	
