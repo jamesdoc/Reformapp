@@ -11,7 +11,7 @@
 					</div>
 					
 					<div class="grid-60">
-						<h2>{{ Name }}</h2> 
+						<h2>{{ name }}</h2> 
 					</div>
 					
 					<div class="grid-20">
@@ -32,16 +32,30 @@
 					[app screen shots]
 				</div>
 -->
-				
-			<!--
-				<div class="grid-60 push-20">
-					<h2>Features</h2>
-					<ul>
-						<li>Does this</li>
-						<li>Does that</li>
-					</ul>
+
+			
+				<div class="share-buttons">
+					<div class="grid-100">
+						<h2>Download {{ name }} now:</h2>
+						{% if ios %}
+							<div class="social-share ios">
+								<a href="{{ ios }}" target="_blank"><img src="template_files/images/appstore.png" alt="Download {{ name }} in the App Store" /></a>
+							</div>
+						{% endif %}
+						
+						{% if droid %}
+						<div class="social-share droid">
+							<a href="{{ droid }}" target="_blank"><img src="template_files/images/playstore.png" alt="Download {{ name }} in the App Store" /></a>
+						</div>
+						{% endif %}
+						
+						{% if wmob %}
+						<div class="social-share wmob">
+							<a href="{{ wmob }}" target="_blank"><img src="template_files/images/winstore.png" alt="Download {{ name }} from the Windows Store" /></a>
+						</div>
+						{% endif %}
+					</div>
 				</div>
-			-->
 				
 				{% if quote %}
 				<div class="grid-100 quote-box">
