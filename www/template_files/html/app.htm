@@ -7,29 +7,29 @@
 				
 				<div class="grid-100 grid-parent app-banner">
 					<div class="grid-20">
-						Day {{ day_no }}
+						Day {{ thisapp.day_no }}
 					</div>
 					
 					<div class="grid-60">
-						<h2>{{ name }}</h2> 
+						<h2>{{ thisapp.name }}</h2> 
 					</div>
 					
 					<div class="grid-20">
-						{% if ios %}<a href="{{ ios }}" target="_blank"><img src="template_files/images/appstore.png" alt="Download {{ name }} in the App Store" /></a>{% endif %}
-						{% if droid %}<a href="{{ droid }}" target="_blank"><img src="template_files/images/playstore.png" alt="Download {{ name }} in the App Store" /></a>{% endif %}
-						{% if wmob %}<a href="{{ wmob }}" target="_blank"><img src="template_files/images/winstore.png" alt="Download {{ name }} from the Windows Store" /></a>{% endif %}
+						{% if thisapp.ios %}<a href="{{ thisapp.ios }}" target="_blank"><img src="template_files/images/appstore.png" alt="Download {{ thisapp.name }} in the App Store" /></a>{% endif %}
+						{% if thisapp.droid %}<a href="{{ thisapp.droid }}" target="_blank"><img src="template_files/images/playstore.png" alt="Download {{ thisapp.name }} in the App Store" /></a>{% endif %}
+						{% if thisapp.wmob %}<a href="{{ thisapp.wmob }}" target="_blank"><img src="template_files/images/winstore.png" alt="Download {{ thisapp.name }} from the Windows Store" /></a>{% endif %}
 					</div>
 				</div>
 				
 				<div class="grid-80 push-10 content-block">
-					{% for para in content %}
+					{% for para in thisapp.content %}
 					<p>{{ para }}</p>
 					{% endfor %}
 				</div>
 				
-				{% if screenshots %}
+				{% if thisapp.screenshots %}
 				<div class="grid-100 app-screenshots">
-					{% for screenshot in screenshots %}
+					{% for screenshot in thisapp.screenshots %}
 					<img src="template_files/images/apps/{{ screenshot }}" alt="" />
 					{% endfor %}
 				</div>
@@ -38,37 +38,37 @@
 			
 				<div class="share-buttons">
 					<div class="grid-100">
-						<h2>Download {{ name }} now:</h2>
-						{% if ios %}
+						<h2>Download {{ thisapp.name }} now:</h2>
+						{% if thisapp.ios %}
 							<div class="social-share ios">
-								<a href="{{ ios }}" target="_blank"><img src="template_files/images/appstore.png" alt="Download {{ name }} in the App Store" /></a>
+								<a href="{{ thisapp.ios }}" target="_blank"><img src="template_files/images/appstore.png" alt="Download {{ thisapp.name }} in the App Store" /></a>
 							</div>
 						{% endif %}
 						
-						{% if droid %}
+						{% if thisapp.droid %}
 						<div class="social-share droid">
-							<a href="{{ droid }}" target="_blank"><img src="template_files/images/playstore.png" alt="Download {{ name }} in the App Store" /></a>
+							<a href="{{ thisapp.droid }}" target="_blank"><img src="template_files/images/playstore.png" alt="Download {{ thisapp.name }} in the App Store" /></a>
 						</div>
 						{% endif %}
 						
-						{% if wmob %}
+						{% if thisapp.wmob %}
 						<div class="social-share wmob">
-							<a href="{{ wmob }}" target="_blank"><img src="template_files/images/winstore.png" alt="Download {{ name }} from the Windows Store" /></a>
+							<a href="{{ thisapp.wmob }}" target="_blank"><img src="template_files/images/winstore.png" alt="Download {{ thisapp.name }} from the Windows Store" /></a>
 						</div>
 						{% endif %}
 					</div>
 				</div>
 				
-				{% if quote %}
+				{% if thisapp.quote %}
 				<div class="grid-100 quote-box">
 					<ul>
 						<li>
 							<blockquote>
 								<div class="circle"><div class="circle">
-									<img src="template_files/images/avatars/{{ quote.cite_avatar }}" alt="" />
+									<img src="template_files/images/avatars/{{ thisapp.quote.cite_avatar }}" alt="" />
 								</div></div>
-								"{{ quote.body }}"
-								<cite>{{ quote.cite_name }}, <a href="{{ quote.cite_link }}" target="_blank">{{ quote.cite_desc }}</a></cite>
+								"{{ thisapp.quote.body }}"
+								<cite>{{ thisapp.quote.cite_name }}, <a href="{{ thisapp.quote.cite_link }}" target="_blank">{{ thisapp.quote.cite_desc }}</a></cite>
 							</blockquote>
 						</li>
 					</ul>
@@ -82,7 +82,7 @@
 			<div class="grid-container">
 				<div class="share-buttons">
 					<div class="grid-100">
-						<h2>Know someone who would benefit from {{ name }}?<br/>Share it with them:</h2>
+						<h2>Know someone who would love {{ thisapp.name }}?<br/>Share it with them:</h2>
 					</div>
 					
 					<div class="grid-100">
@@ -102,6 +102,8 @@
 				</div>
 			</div>
 		</section>
+		
+		{% include "allapps.htm" %}
 		
 		{% include "footer.htm" %}
 		

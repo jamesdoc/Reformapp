@@ -27,8 +27,11 @@
 		// Is the app in the app array, and are we on time?
 		if(isset($apps[$requested]) && $today >= $apps[$requested]['date']){
 			
+			$data['thisapp'] = $apps[$requested];
+			$data['released'] = get_list_of_released_apps($apps, $today);
+				
 			// Go get a template
-			echo $twig->render('app.htm', $apps[$requested]);
+			echo $twig->render('app.htm', $data);
 			
 			// THOU SHALT NOT PASS
 			exit();
@@ -58,8 +61,8 @@
 	
 	
 	
-	function find_app_in_array($app_array, $today){
-		foreach ($app_array as $key => $value){
+	function find_app_in_array($app_array, $today) {
+		foreach ($app_array as $key => $value) {
 			if($value['date'] == $today){
 				return $value;
 			}
@@ -70,4 +73,19 @@
 	{
 	    header('Location: ' . $url, true, $permanent ? 301 : 302);
 	    exit();
+	}
+	
+	function get_list_of_released_apps($app_array, $today) {
+		$rtn = array();
+		foreach ($app_array as $key => $value) {
+			if($value['date'] <= $today) {
+				$rtn[] = array(
+					'name'=>$value['name'],
+					'slug'=>$value['slug'],
+					'day_no'=>$value['day_no'],
+					'teaser'=>$value['teaser']
+				);
+			}
+		}
+		return $rtn;
 	}

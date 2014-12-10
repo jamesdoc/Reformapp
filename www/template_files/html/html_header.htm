@@ -13,7 +13,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
 		<link href="template_files/css/unsemanticgrid.css" rel="stylesheet" type="text/css" />
 		<link href="template_files/css/style.css" rel="stylesheet" type="text/css" />
-		{% if day_no %}<link href="template_files/css/day{{ day_no }}.css" rel="stylesheet" type="text/css" />{% endif %}
+		<link href="template_files/css/app-styles.css" rel="stylesheet" type="text/css" />
 		
 		<link rel="shortcut icon" href="favicon.ico" >
 		
@@ -37,4 +37,4 @@
 		
 	</head>
 
-	<body{% if day_no %} class="day-{{ day_no }}"{% endif %}>
+	<body{% if thisapp.day_no %} class="day-{{ thisapp.day_no }}"{% endif %}>

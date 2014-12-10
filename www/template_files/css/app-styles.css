@@ -1,47 +1,56 @@
 /* DAY 10 */
 
-a{
-	color: #ffa400;
-}
-
-header{
+.day-10 header{
 	background: url('../images/headerback-day-10.png') repeat-y center center;
 }
 
-nav{
+.day-10 nav{
 	background: rgb(0, 0, 0);
 }
 
-	nav a:hover{
+	.day-10 nav a:hover{
 		color: #ffa400;
 	}
 
-.app-banner .grid-20{
+.day-10 .app-banner .grid-20{
 	color: #ffa400;
 }
 
-.app-banner .grid-60 h2{
+.day-10 .app-banner .grid-60 h2{
 	text-indent: -99999px;
 	background: url('../images/day-10-logo.png') no-repeat center center;
 	background-size: cover;
 }
 
-.app-banner .grid-60{
+.day-10 .app-banner .grid-60{
 	background: #ffa400;
 }
 
-.app-screenshots img{
+.day-10 .app-screenshots img{
 	border: 1px solid #ffa400;
 }
 
-#app-sharer{
+.day-10 #app-sharer{
 	background: url('../images/headerback-day-10.png') repeat-y center center;
 }
 
-.quote-box{
+.day-10 .quote-box{
 	border: 1px solid #ffa400;
 }
 
-blockquote .circle{
+.day-10 blockquote .circle{
 	border: 1px solid #ffa400;
 }
+
+.day-10 blockquote a{
+	color: #ffa400;
+}
+
+.app-block.day-10 a{
+	background-color: #ffa400;
+	color: white;
+}
+
+	.app-block.day-10 a:hover{
+		background-color: #724c06;
+	}

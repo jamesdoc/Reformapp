@@ -1,0 +1,18 @@
+<section id="all-apps">
+	<div class="grid-container">
+		<div class="grid-100">
+			<h2>All the apps announced so far...</h2>
+		</div>
+		
+		{% for app in released %}
+		
+		<div class="app-block grid-25 tablet-grid-33 mobile-grid-50 day-{{ app.day_no }}">
+			<a href="/{{ app.slug }}">
+				<h3>{{ app.name }}</h3>
+				<p>{{ app.teaser }}</p>
+			</a>
+		</div>
+		
+		{% endfor %}
+	</div>
+</section>
