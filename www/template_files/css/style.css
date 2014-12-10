@@ -96,13 +96,11 @@ section{
 	}
 	
 	.app-banner .grid-60{
-		background: #ffa400;
+		background: #77b72b;
 		height: 8em;
 	}
 	
 	.app-banner .grid-60 h2{
-		text-indent: -99999px;
-		background: url('../images/day-10-logo.png') no-repeat center center;
 		background-size: contain;
 		width: 100%;
 		height: 3em;
@@ -111,6 +109,20 @@ section{
 	
 	.content-block{
 		margin-bottom: 2em;
+	}
+	
+.app-screenshots{
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+}
+
+	.app-screenshots img{
+		border: 1px solid #77b72b;
+		box-sizing: border-box;
+		width: 20%;
+		margin: 1%;
+		padding: 1%;
 	}
 
 .quote-box{
@@ -310,30 +322,22 @@ blockquote{
 /* COLOURS
  *----------------------------------------------------------------------------------------*/
 
+a{
+	color: #77b72b;
+}
+
 header{
 	background: url('../images/headerback-green.png') repeat-y center center;
 }
 
-	.day-10 header{
-		background: url('../images/headerback-day-10.png') repeat-y center center;
-	}
-	
 #app-sharer .grid-container{
 	background: rgb(255, 255, 255);
 	padding-bottom: 2em;
 }
-
-	.day-10 #app-sharer{
-		background: url('../images/headerback-day-10.png') repeat-y center center;
-	}
 	
 nav{
 	background: #00310a;
 }
-
-	.day-10 nav{
-		background: rgb(0, 0, 0);
-	}
 
 	nav a{
 		color: rgb(255, 255, 255);
@@ -342,31 +346,22 @@ nav{
 		nav a:hover{
 			color: #77b72b;
 		}
-		
-		.day-10 nav a:hover{
-			color: #ffa400;
-		}
 
 .app-banner .grid-20{
 	background-color: black;	
 }
 
-	.day-10 .app-banner .grid-20{
-		color: #ffa400;
-	}
+	
 
 .quote-box{
-	border: 1px solid rgb(0, 0, 0);
+	border: 1px solid #77b72b;
 }
 
-	.day-10 .quote-box{
-		border: 1px solid #ffa400;
+
+	blockquote .circle{
+		border: 1px solid #77b72b;
 	}
-	
-	.day-10 blockquote .circle{
-		border: 1px solid #ffa400;
-	}
-	
+		
 	blockquote .circle .circle{
 		border: 0;
 	}

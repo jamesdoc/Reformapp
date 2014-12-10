@@ -27,11 +27,13 @@
 					{% endfor %}
 				</div>
 				
-<!--
-				<div class="grid-100 app-scroller">
-					[app screen shots]
+				{% if screenshots %}
+				<div class="grid-100 app-screenshots">
+					{% for screenshot in screenshots %}
+					<img src="template_files/images/apps/{{ screenshot }}" alt="" />
+					{% endfor %}
 				</div>
--->
+				{% endif %}
 
 			
 				<div class="share-buttons">
