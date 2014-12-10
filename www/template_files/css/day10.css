@@ -1,0 +1,47 @@
+/* DAY 10 */
+
+a{
+	color: #ffa400;
+}
+
+header{
+	background: url('../images/headerback-day-10.png') repeat-y center center;
+}
+
+nav{
+	background: rgb(0, 0, 0);
+}
+
+	nav a:hover{
+		color: #ffa400;
+	}
+
+.app-banner .grid-20{
+	color: #ffa400;
+}
+
+.app-banner .grid-60 h2{
+	text-indent: -99999px;
+	background: url('../images/day-10-logo.png') no-repeat center center;
+	background-size: cover;
+}
+
+.app-banner .grid-60{
+	background: #ffa400;
+}
+
+.app-screenshots img{
+	border: 1px solid #ffa400;
+}
+
+#app-sharer{
+	background: url('../images/headerback-day-10.png') repeat-y center center;
+}
+
+.quote-box{
+	border: 1px solid #ffa400;
+}
+
+blockquote .circle{
+	border: 1px solid #ffa400;
+}
