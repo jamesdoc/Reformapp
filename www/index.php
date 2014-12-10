@@ -8,8 +8,17 @@
 	include_once('config.inc');
 	include_once('apps.inc');
 	
+	// Load up Twig
+	require_once 'Twig/Autoloader.php';
+	Twig_Autoloader::register();
+	$loader = new Twig_Loader_Filesystem('template_files/html/');
+	$twig = new Twig_Environment($loader, $twig_config);
+	
 	// We are going to do a lot of date based goodness
 	$today = date('Y-m-d');
+	
+	
+	
 	
 	// Right, has an app been requested?
 	if (isset($_GET['app'])) {
@@ -17,12 +26,6 @@
 		
 		// Is the app in the app array, and are we on time?
 		if(isset($apps[$requested]) && $today >= $apps[$requested]['date']){
-			
-			// Load up Twig
-			require_once 'Twig/Autoloader.php';
-			Twig_Autoloader::register();
-			$loader = new Twig_Loader_Filesystem('template_files/html/');
-			$twig = new Twig_Environment($loader, $twig_config);
 			
 			// Go get a template
 			echo $twig->render('app.htm', $apps[$requested]);
@@ -41,7 +44,6 @@
 	
 	
 	
-	
 	// We've not requested an app... should we be showing one today?
 	$app = find_app_in_array($apps, $today);
 	if ($app){
@@ -49,7 +51,9 @@
 	}
 	
 	// We've not requested an app, and there is nothing to show so, lets just return the standard index page!
-	include_once('index.htm');
+	echo $twig->render('index.htm');
+	exit();
+	
 	
 	
 	
