@@ -197,6 +197,10 @@ section#social{
 	text-align: center;
 }
 
+	.share-buttons img{
+		margin: 0.5em 0;
+	}
+
 	.social-share{
 		width: 200px;
 		display: inline-block;
