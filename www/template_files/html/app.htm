@@ -5,21 +5,12 @@
 		<section id="app-promo">
 			<div class="grid-container">
 				
-				<div class="grid-100 grid-parent app-banner">
-					<div class="grid-20">
-						Day {{ thisapp.day_no }}
-					</div>
-					
-					<div class="grid-60">
-						<h2>{{ thisapp.name }}</h2> 
-					</div>
-					
-					<div class="grid-20">
-						{% if thisapp.ios %}<a href="{{ thisapp.ios }}" target="_blank"><img src="template_files/images/appstore.png" alt="Download {{ thisapp.name }} in the App Store" /></a>{% endif %}
-						{% if thisapp.droid %}<a href="{{ thisapp.droid }}" target="_blank"><img src="template_files/images/playstore.png" alt="Download {{ thisapp.name }} in the App Store" /></a>{% endif %}
-						{% if thisapp.wmob %}<a href="{{ thisapp.wmob }}" target="_blank"><img src="template_files/images/winstore.png" alt="Download {{ thisapp.name }} from the Windows Store" /></a>{% endif %}
-					</div>
+				<div class="grid-100 app-banner">
+					<h3>Day {{ thisapp.day_no }}</h3>
+					<img src="template_files/images/apps/day_{{ thisapp.day_no }}_logo.png" alt="{{ thisapp.name }}" />
 				</div>
+				
+				{% include "appstore.htm" %}
 				
 				<div class="grid-80 push-10 content-block">
 					{% for para in thisapp.content %}
@@ -30,34 +21,15 @@
 				{% if thisapp.screenshots %}
 				<div class="grid-100 app-screenshots">
 					{% for screenshot in thisapp.screenshots %}
-					<img src="template_files/images/apps/{{ screenshot }}" alt="" />
+					<a href="#" data-featherlight="template_files/images/apps/{{ screenshot }}">
+						<img src="template_files/images/apps/{{ screenshot }}" alt="" />
+					</a>
 					{% endfor %}
 				</div>
 				{% endif %}
 
 			
-				<div class="share-buttons">
-					<div class="grid-100">
-						<h2>Download {{ thisapp.name }} now:</h2>
-						{% if thisapp.ios %}
-							<div class="social-share ios">
-								<a href="{{ thisapp.ios }}" target="_blank"><img src="template_files/images/appstore.png" alt="Download {{ thisapp.name }} in the App Store" /></a>
-							</div>
-						{% endif %}
-						
-						{% if thisapp.droid %}
-						<div class="social-share droid">
-							<a href="{{ thisapp.droid }}" target="_blank"><img src="template_files/images/playstore.png" alt="Download {{ thisapp.name }} in the App Store" /></a>
-						</div>
-						{% endif %}
-						
-						{% if thisapp.wmob %}
-						<div class="social-share wmob">
-							<a href="{{ thisapp.wmob }}" target="_blank"><img src="template_files/images/winstore.png" alt="Download {{ thisapp.name }} from the Windows Store" /></a>
-						</div>
-						{% endif %}
-					</div>
-				</div>
+				{% include "appstore.htm" %}
 				
 				{% if thisapp.quote %}
 				<div class="grid-100 quote-box">
@@ -87,16 +59,16 @@
 					
 					<div class="grid-100">
 						<div class="social-share twitter">
-							<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://reformapp.net" data-text="It's hard to live faithfully for Jesus, but your smartphone can help you more than you think..." data-via="reformapp" data-count="none">Tweet</a>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://reformapp.net/{{ thisapp.slug }}" data-text="{{ thisapp.teaser }}" data-via="reformapp" data-count="none">Tweet</a>
 						</div>
 						
 						<div class="social-share facebook">
-							<div class="fb-share-button" data-href="http://reformapp.net" data-layout="button"></div>
+							<div class="fb-share-button" data-href="http://reformapp.net/{{ thisapp.slug }}" data-layout="button"></div>
 							<div id="fb-root"></div>
 						</div>
 						
 						<div class="social-share google">
-							<div class="g-plus" data-action="share" data-annotation="none" data-height="24" data-href="http://reformapp.net"></div>
+							<div class="g-plus" data-action="share" data-annotation="none" data-height="24" data-href="http://reformapp.net/{{ thisapp.slug }}"></div>
 						</div>
 					</div>
 				</div>

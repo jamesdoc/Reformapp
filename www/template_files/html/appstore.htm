@@ -1,0 +1,21 @@
+<div class="app-store-buttons">
+	<div class="grid-100">
+		{% if thisapp.ios %}
+			<div class="app-button ios">
+				<a href="{{ thisapp.ios }}" target="_blank"><img src="template_files/images/appstore.png" alt="Download {{ thisapp.name }} in the App Store" /></a>
+			</div>
+		{% endif %}
+		
+		{% if thisapp.droid %}
+		<div class="app-button droid">
+			<a href="{{ thisapp.droid }}" target="_blank"><img src="template_files/images/playstore.png" alt="Download {{ thisapp.name }} in the App Store" /></a>
+		</div>
+		{% endif %}
+		
+		{% if thisapp.wmob %}
+		<div class="app-button wmob">
+			<a href="{{ thisapp.wmob }}" target="_blank"><img src="template_files/images/winstore.png" alt="Download {{ thisapp.name }} from the Windows Store" /></a>
+		</div>
+		{% endif %}
+	</div>
+</div>

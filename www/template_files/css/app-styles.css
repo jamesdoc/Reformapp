@@ -1,8 +1,142 @@
+/* DAY 1 */
+
+.day-1 header{
+	background: url('../images/headerback-day-1.jpg') repeat-y center center;
+	background-size: cover;
+}
+
+	.day-1 header h1{
+		background: url('../images/reformapp-text-black.png') no-repeat center center;
+	}
+
+.day-1 nav{
+	background: rgb(0, 0, 0);
+}
+
+	.day-1 nav a:hover{
+		color: #84c4d2;
+	}
+	
+	
+
+.day-1 .app-banner{
+	background-color: #84c4d2;
+	color: white;
+}
+
+.day-1 .app-banner .grid-60 h2{
+	text-indent: -99999px;
+	background: url('../images/day-1-logo.png') no-repeat center center;
+	background-size: cover;
+}
+
+.day-1 .app-banner .grid-60{
+	background: #84c4d2;
+}
+
+.day-1 .app-screenshots img{
+	border: 1px solid #84c4d2;
+}
+
+.day-1 #app-sharer{
+	background: url('../images/headerback-day-1.jpg') repeat-y center center;
+}
+
+.day-1 .quote-box{
+	border: 1px solid #84c4d2;
+}
+
+.day-1 blockquote .circle{
+	border: 1px solid #84c4d2;
+}
+
+.day-1 blockquote a{
+	color: #84c4d2;
+}
+
+
+.app-block.day-1 a{
+	background-color: #84c4d2;
+}
+
+	.app-block.day-1 a:hover{
+		background-color: #478593;
+	}
+
+
+/* DAY 2 */
+.day-2 header{
+	background: url('../images/headerback-day-2.jpg') repeat-y center center;
+	background-size: cover;
+}
+
+	.day-2 header h1{
+		background: url('../images/reformapp-text-black.png') no-repeat center center;
+	}
+
+
+.day-2 nav{
+	background: rgb(0, 0, 0);
+}
+
+	.day-2 nav a:hover{
+		color: #072f4d;
+	}
+
+.day-2 .app-banner .grid-20{
+	color: #072f4d;
+}
+
+.day-2 .app-banner .grid-60 h2{
+	text-indent: -99999px;
+	background: url('../images/day-2-logo.png') no-repeat center center;
+	background-size: cover;
+}
+
+.day-2 .app-banner .grid-60{
+	background: #072f4d;
+}
+
+.day-2 .app-screenshots img{
+	border: 1px solid #072f4d;
+}
+
+.day-2 #app-sharer{
+	background: url('../images/headerback-day-2.jpg') repeat-y center center;
+}
+
+.day-2 .quote-box{
+	border: 1px solid #072f4d;
+}
+
+.day-2 blockquote .circle{
+	border: 1px solid #072f4d;
+}
+
+.day-2 blockquote a{
+	color: #072f4d;
+}
+
+
+.app-block.day-2 a{
+	background-color: #072f4d;
+}
+
+	.app-block.day-2 a:hover{
+		background-color: #1e4868;
+	}
+
+
 /* DAY 10 */
 
 .day-10 header{
-	background: url('../images/headerback-day-10.png') repeat-y center center;
+	background: url('../images/headerback-day-10.jpg') repeat-y center center;
+	background-size: cover;
 }
+
+	.day-10 header h1{
+		background: url('../images/reformapp-text-black.png') no-repeat center center;
+	}
 
 .day-10 nav{
 	background: rgb(0, 0, 0);
@@ -12,8 +146,8 @@
 		color: #ffa400;
 	}
 
-.day-10 .app-banner .grid-20{
-	color: #ffa400;
+.day-10 .app-banner{
+	background-color: #ffa400;
 }
 
 .day-10 .app-banner .grid-60 h2{
@@ -30,8 +164,13 @@
 	border: 1px solid #ffa400;
 }
 
+.day-10 .app-screenshots img:hover{
+	border: 1px solid #d68b00;
+	box-shadow: 0px 0px 5px #ffa400;
+}
+
 .day-10 #app-sharer{
-	background: url('../images/headerback-day-10.png') repeat-y center center;
+	background: url('../images/headerback-day-10.jpg') repeat-y center center;
 }
 
 .day-10 .quote-box{
@@ -52,5 +191,5 @@
 }
 
 	.app-block.day-10 a:hover{
-		background-color: #724c06;
+		background-color: #d68b00;
 	}
