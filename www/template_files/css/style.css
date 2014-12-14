@@ -192,6 +192,26 @@ section#social{
 		padding: 0 1em;
 		display: inline-block;
 	}
+	
+@media screen and (max-width: 600px) {
+	
+	.app-store-buttons{
+		margin: 1em 0;	
+	}
+	
+	.app-button{
+		width: 50%;
+		padding: 0.5em 1em;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.app-button{
+		width: 75%;
+	}
+}
 
 .share-buttons{
 	margin: 2em 0;
