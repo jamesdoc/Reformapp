@@ -6,7 +6,6 @@
 			<div class="grid-container">
 				
 				<div class="grid-100 app-banner">
-					<h3>Day {{ thisapp.day_no }}</h3>
 					<img src="template_files/images/apps/day_{{ thisapp.day_no }}_logo.png" alt="{{ thisapp.name }}" />
 				</div>
 				
@@ -36,11 +35,13 @@
 					<ul>
 						<li>
 							<blockquote>
+								{% if thisapp.quote.cite_avatar %}
 								<div class="circle"><div class="circle">
 									<img src="template_files/images/avatars/{{ thisapp.quote.cite_avatar }}" alt="" />
 								</div></div>
+								{% endif %}
 								"{{ thisapp.quote.body }}"
-								<cite>{{ thisapp.quote.cite_name }}, <a href="{{ thisapp.quote.cite_link }}" target="_blank">{{ thisapp.quote.cite_desc }}</a></cite>
+								<cite>{{ thisapp.quote.cite_name }}{% if thisapp.quote.cite_desc %}, <a href="{{ thisapp.quote.cite_link }}" target="_blank">{{ thisapp.quote.cite_desc }}</a>{% endif %}</cite>
 							</blockquote>
 						</li>
 					</ul>
