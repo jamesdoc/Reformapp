@@ -18,6 +18,10 @@
 	$today = date('Y-m-d');
 	
 	
+	if($today > "2014-12-15"){
+		$data['ongoing'] = True;
+		$data['released'] = get_list_of_released_apps($apps, $today);
+	}
 	
 	
 	// Right, has an app been requested?
@@ -28,7 +32,6 @@
 		if(isset($apps[$requested]) && $today >= $apps[$requested]['date']){
 			
 			$data['thisapp'] = $apps[$requested];
-			$data['released'] = get_list_of_released_apps($apps, $today);
 				
 			// Go get a template
 			echo $twig->render('app.htm', $data);
@@ -53,8 +56,10 @@
 		Redirect($base_url . $app['slug'], false);
 	}
 	
+	$data['today'] = $today;
+	
 	// We've not requested an app, and there is nothing to show so, lets just return the standard index page!
-	echo $twig->render('index.htm');
+	echo $twig->render('index.htm', $data);
 	exit();
 	
 	
