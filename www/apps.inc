@@ -66,12 +66,12 @@
 		/*
 		
 		'quote' => array(
-					'body' => 'I say it without hyperbole: PrayerMate revitalized my prayer life.',
-					'cite_name' => 'Tim Challies',
-					'cite_desc' => 'Blogger, Author, and Book Reviewer',
-					'cite_link' => 'http://www.challies.com/resources/how-an-app-revitalized-my-prayer-life',
-					'cite_avatar' => 'tc.jpg',
-				),
+			'body' => 'I say it without hyperbole: PrayerMate revitalized my prayer life.',
+			'cite_name' => 'Tim Challies',
+			'cite_desc' => 'Blogger, Author, and Book Reviewer',
+			'cite_link' => 'http://www.challies.com/resources/how-an-app-revitalized-my-prayer-life',
+			'cite_avatar' => 'tc.jpg',
+		),
 		*/
 		
 	);
@@ -102,12 +102,12 @@
 		
 		
 		'quote' => array(
-					'body' => '...I let my 6 year old daughter give it a test run... She loved it and when it was my turn she actually took the iPad out of my hand so that she could show me how to play!',
-					'cite_name' => 'Jerry @ Relevant Gaming',
-					'cite_desc' => 'Children\'s Pastor and the founder of Relevant Gaming',
-					'cite_link' => 'http://relevant-gaming.com/david-vs-goliath-a-righteous-tale-review/',
-					'cite_avatar' => 'jrg.jpg',
-				),
+			'body' => '...I let my 6 year old daughter give it a test run... She loved it and when it was my turn she actually took the iPad out of my hand so that she could show me how to play!',
+			'cite_name' => 'Jerry @ Relevant Gaming',
+			'cite_desc' => 'Children\'s Pastor and the founder of Relevant Gaming',
+			'cite_link' => 'http://relevant-gaming.com/david-vs-goliath-a-righteous-tale-review/',
+			'cite_avatar' => 'jrg.jpg',
+		),
 		
 		
 	);
@@ -136,7 +136,7 @@
 			"It’ll start you out with 28 days of full devotionals, and then provide you with daily readings, questions to get you thinking and ideas for further contemplation, prayer and application in your life.  You can download books of the bible to go though in this fashion (some are still being added) and start - or restart - a time of close communion with the Lord as you study his word and think on what it says. However busy your life is, there’s always a place in your day when you can sit down and concentrate on matters more important that the hustle and bustle of day to day living.   With Explore, you possess a wonderful tool for studying God’s word, wherever, whenever.",
 		),
 		
-		'teaser' => 'Make exploring God’s word the priority in your life',
+		'teaser' => 'Make exploring God\'s word everyday the priority in your life.',
 		
 		/*
 			'quote' => array(
@@ -176,23 +176,20 @@
 		
 		'teaser' => 'Be generous with a small amount to help the gospel spread.',
 		
-		/*
-			'quote' => array(
-				'body' => '...I let my 6 year old daughter give it a test run... She loved it and when it was my turn she actually took the iPad out of my hand so that she could show me how to play!',
-				'cite_name' => 'Jerry @ Relevant Gaming',
-				'cite_desc' => 'Children\'s Pastor and the founder of Relevant Gaming',
-				'cite_link' => 'http://relevant-gaming.com/david-vs-goliath-a-righteous-tale-review/',
-				'cite_avatar' => 'jrg.jpg',
-			),
-		*/
-		
+		'quote' => array(
+			'body' => 'Rupert Edwards (Lepton founder) wants to change the way churches leverage technology in the areas of giving and prayer.',
+			'cite_name' => 'Shamichael Hallman',
+			'cite_desc' => 'Campus Pastor at New Direction Christian Church in Memphis, TN',
+			'cite_link' => 'http://leadnet.org/code-for-the-kingdom-brad-russell-faithvillage/',
+			'cite_avatar' => 'sh.jpg',
+		),
 	);
 	
-	$apps['you-version'] = array(
+	$apps['youversion'] = array(
 		
 		'date' => '2014-12-20',
-		'name' => 'You Version',
-		'slug' => 'you-version',
+		'name' => 'YouVersion',
+		'slug' => 'youversion',
 		'day_no' => '6',
 		
 		'url'  => 'https://www.youversion.com/apps',
@@ -214,15 +211,13 @@
 		
 		'teaser' => '',
 		
-		/*
-			'quote' => array(
-				'body' => '...I let my 6 year old daughter give it a test run... She loved it and when it was my turn she actually took the iPad out of my hand so that she could show me how to play!',
-				'cite_name' => 'Jerry @ Relevant Gaming',
-				'cite_desc' => 'Children\'s Pastor and the founder of Relevant Gaming',
-				'cite_link' => 'http://relevant-gaming.com/david-vs-goliath-a-righteous-tale-review/',
-				'cite_avatar' => 'jrg.jpg',
-			),
-		*/
+		'quote' => array(
+			'body' => 'For millions of readers around the world, [the] wildly successful free Bible app, YouVersion, is changing how, where and when they read the Bible.',
+			'cite_name' => 'Amy O\'Leary',
+			'cite_desc' => 'New York Times Deputy International Editor',
+			'cite_link' => 'http://www.nytimes.com/2013/07/27/technology/the-faithful-embrace-youversion-a-bible-app.html',
+			'cite_avatar' => 'al.jpg',
+		),
 		
 	);
 	
@@ -326,15 +321,14 @@
 		
 		'teaser' => 'Commit God\'s word to your memory, and your heart',
 		
-		/*
-			'quote' => array(
-				'body' => '...I let my 6 year old daughter give it a test run... She loved it and when it was my turn she actually took the iPad out of my hand so that she could show me how to play!',
-				'cite_name' => 'Jerry @ Relevant Gaming',
-				'cite_desc' => 'Children\'s Pastor and the founder of Relevant Gaming',
-				'cite_link' => 'http://relevant-gaming.com/david-vs-goliath-a-righteous-tale-review/',
-				'cite_avatar' => 'jrg.jpg',
-			),
-		*/
+		'quote' => array(
+			'body' => 'I\'m excited about the Fighter Verse App... This is going to be with me every day.',
+			'cite_name' => 'John Piper',
+			'cite_desc' => 'founder and teacher of desiringGod.org and chancellor of Bethlehem College & Seminary',
+			'cite_link' => 'http://www.desiringgod.org/blog/posts/fighter-verses-on-your-iphone-or-android',
+			'cite_avatar' => 'jp.jpg',
+		),
+		
 		
 	);
 	

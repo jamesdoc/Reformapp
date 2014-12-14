@@ -353,11 +353,11 @@
 }
 
 	.day-6 nav a:hover{
-		color: #500600;
+		color: #97b55f;
 	}
 
 .day-6 .app-banner{
-	background-color: #500600;
+	background-color: #97b55f;
 	color: white;
 }
 
@@ -368,11 +368,11 @@
 }
 
 .day-6 .app-banner .grid-60{
-	background: #500600;
+	background: #97b55f;
 }
 
 .day-6 .app-screenshots img{
-	border: 1px solid #500600;
+	border: 1px solid #97b55f;
 }
 
 .day-6 #app-sharer{
@@ -380,24 +380,24 @@
 }
 
 .day-6 .quote-box{
-	border: 1px solid #500600;
+	border: 1px solid #97b55f;
 }
 
 .day-6 blockquote .circle{
-	border: 1px solid #500600;
+	border: 1px solid #97b55f;
 }
 
 .day-6 blockquote a{
-	color: #500600;
+	color: #97b55f;
 }
 
 
 .app-block.day-6 a{
-	background-color: #500600;
+	background-color: #97b55f;
 }
 
 	.app-block.day-6 a:hover{
-		background-color: #330300;
+		background-color: #51632e;
 	}
 
 
