@@ -173,10 +173,10 @@
 		
 		'content' => array(
 			"Habitual reading of the bible is incredibly important for a healthy Christian life, a regular quiet time with the Lord will greatly help you as you grow in spiritual maturity. There are many sets of bible reading notes to help you engage with scripture, but what happens when you reach the end of the booklet? This time, why don’t you try one that’s delivered directly to your smartphone, for easy access at any time?",
-			"It’ll start you out with 28 days of full devotionals, and then provide you with daily readings, questions to get you thinking and ideas for further contemplation, prayer and application in your life.  You can download books of the bible to go though in this fashion (some are still being added) and start - or restart - a time of close communion with the Lord as you study his word and think on what it says. However busy your life is, there’s always a place in your day when you can sit down and concentrate on matters more important that the hustle and bustle of day to day living.   With Explore, you possess a wonderful tool for studying God’s word, wherever, whenever.",
+			"It’ll start you out with 28 days of full devotionals, and then provide you with daily readings, questions to get you thinking and ideas for further contemplation, prayer and application in your life.  You can download books of the bible to go through in this fashion (some are still being added) and start - or restart - a time of close communion with the Lord as you study his word and think on what it says. However busy your life is, there’s always a place in your day when you can sit down and concentrate on matters more important than the hustle and bustle of day to day living. With Explore, you possess a wonderful tool for studying God’s word, wherever, whenever."
 		),
 		
-		'teaser' => 'Make exploring God\'s word everyday the priority in your life.',
+		'teaser' => 'Explore God’s word wherever you are',
 		
 		/*
 			'quote' => array(
