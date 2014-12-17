@@ -18,7 +18,7 @@
 	$today = date('Y-m-d');
 	
 	
-	if($today > "2014-12-15"){
+	if($today >= "2014-12-15"){
 		$data['ongoing'] = True;
 		$data['released'] = get_list_of_released_apps($apps, $today);
 	}
