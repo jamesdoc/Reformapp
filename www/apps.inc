@@ -112,9 +112,44 @@
 		
 	);
 	
-	$apps['explore'] = array(
+	$apps['covenant-eyes'] = array(
 		
 		'date' => '2014-12-18',
+		'name' => 'Covenant Eyes',
+		'slug' => 'covenant-eyes',
+		'day_no' => '7',
+		
+		'url'  => 'http://www.covenanteyes.com/',
+		'ios'  => 'http://itunes.apple.com/us/app/covenant-eyes/id335318146?mt=8',
+		'droid'=> 'https://play.google.com/store/apps/details?id=com.covenanteyes.androidservice',
+		//'wmob' => '',
+
+		'screenshots' => array(
+			"day7-1.jpg",
+			"day7-2.jpg",
+			"day7-3.jpg",
+			"day7-4.jpg"	
+		),
+		
+		'content' => array(
+			"",
+		),
+		
+		'teaser' => '',
+		
+			'quote' => array(
+				'body' => 'I’ve used different methods of Internet accountability for the past decade, and in my experience there’s not a better single tool than Covenant Eyes software.',
+				'cite_name' => 'Joe Tyrpak',
+				'cite_desc' => 'Pastor at Tri-County Bible Church, Madison',
+				'cite_link' => 'http://andynaselli.com/covenant-eyes',
+				'cite_avatar' => 'jt.jpg',
+			),
+		
+	);
+	
+	$apps['explore'] = array(
+		
+		'date' => '2014-12-19',
 		'name' => 'Explore',
 		'slug' => 'explore',
 		'day_no' => '4',
@@ -150,40 +185,6 @@
 		
 	);
 	
-	$apps['lepton'] = array(
-		
-		'date' => '2014-12-19',
-		'name' => 'Lepton',
-		'slug' => 'lepton',
-		'day_no' => '5',
-		
-		'url'  => 'https://lepton.co/',
-		'ios'  => 'https://itunes.apple.com/us/app/id779651798',
-		//'droid'=> '',
-		//'wmob' => '',
-
-		'screenshots' => array(
-			"day5-1.jpg",
-			"day5-2.jpg",
-			"day5-3.jpg",
-			"day5-4.jpg"	
-		),
-		
-		'content' => array(
-			"Christians should be generous with what they have.  We give to support local churches, fund church plants, support missionaries overseas and provide for many causes around the world.  But it’s not always easy to keep up to date with the situations of need around the world, and sometimes they fall under our radar.  Lepton is here to help.  It’s here to help you get organised with your giving.  To provide you with a simple way to find needy people, churches, ministries and other scenarios where your support could make all the difference.",
-			"From funding a mission trip to Kenya to getting a church plant going in France, it’s all there at your fingertips.  And there’s no need to give wedges of money all at once, leaving you with a scramble to sort out your monthly finances.  With thousands of people around the world donating a few pounds here and there, the target is soon reached and the work of the gospel spread.  Lepton states that it believes the best way to grow in generosity is to give a little often. Sign up for it today, and become more generous than you had thought you could be.",
-		),
-		
-		'teaser' => 'Be generous with a small amount to help the gospel spread.',
-		
-		'quote' => array(
-			'body' => 'Rupert Edwards (Lepton founder) wants to change the way churches leverage technology in the areas of giving and prayer.',
-			'cite_name' => 'Shamichael Hallman',
-			'cite_desc' => 'Campus Pastor at New Direction Christian Church in Memphis, TN',
-			'cite_link' => 'http://leadnet.org/code-for-the-kingdom-brad-russell-faithvillage/',
-			'cite_avatar' => 'sh.jpg',
-		),
-	);
 	
 	$apps['youversion'] = array(
 		
@@ -221,44 +222,10 @@
 		
 	);
 	
-	$apps['covenant-eyes'] = array(
-		
-		'date' => '2014-12-21',
-		'name' => 'Covenant Eyes',
-		'slug' => 'covenant-eyes',
-		'day_no' => '7',
-		
-		'url'  => 'http://www.covenanteyes.com/',
-		'ios'  => 'http://itunes.apple.com/us/app/covenant-eyes/id335318146?mt=8',
-		'droid'=> 'https://play.google.com/store/apps/details?id=com.covenanteyes.androidservice',
-		//'wmob' => '',
-
-		'screenshots' => array(
-			"day7-1.jpg",
-			"day7-2.jpg",
-			"day7-3.jpg",
-			"day7-4.jpg"	
-		),
-		
-		'content' => array(
-			"",
-		),
-		
-		'teaser' => '',
-		
-			'quote' => array(
-				'body' => 'I’ve used different methods of Internet accountability for the past decade, and in my experience there’s not a better single tool than Covenant Eyes software.',
-				'cite_name' => 'Joe Tyrpak',
-				'cite_desc' => 'Pastor at Tri-County Bible Church, Madison',
-				'cite_link' => 'http://andynaselli.com/covenant-eyes',
-				'cite_avatar' => 'jt.jpg',
-			),
-		
-	);
 	
 	$apps['union'] = array(
 		
-		'date' => '2014-12-22',
+		'date' => '2014-12-21',
 		'name' => 'Union',
 		'slug' => 'union',
 		'day_no' => '8',
@@ -294,6 +261,45 @@
 		
 	);
 	
+	
+	$apps['lepton'] = array(
+		
+		'date' => '2014-12-22',
+		'name' => 'Lepton',
+		'slug' => 'lepton',
+		'day_no' => '5',
+		
+		'url'  => 'https://lepton.co/',
+		'ios'  => 'https://itunes.apple.com/us/app/id779651798',
+		//'droid'=> '',
+		//'wmob' => '',
+
+		'screenshots' => array(
+			"day5-1.jpg",
+			"day5-2.jpg",
+			"day5-3.jpg",
+			"day5-4.jpg"	
+		),
+		
+		'content' => array(
+			"Christians should be generous with what they have.  We give to support local churches, fund church plants, support missionaries overseas and provide for many causes around the world.  But it’s not always easy to keep up to date with the situations of need around the world, and sometimes they fall under our radar.  Lepton is here to help.  It’s here to help you get organised with your giving.  To provide you with a simple way to find needy people, churches, ministries and other scenarios where your support could make all the difference.",
+			"From funding a mission trip to Kenya to getting a church plant going in France, it’s all there at your fingertips.  And there’s no need to give wedges of money all at once, leaving you with a scramble to sort out your monthly finances.  With thousands of people around the world donating a few pounds here and there, the target is soon reached and the work of the gospel spread.  Lepton states that it believes the best way to grow in generosity is to give a little often. Sign up for it today, and become more generous than you had thought you could be.",
+		),
+		
+		'teaser' => 'Be generous with a small amount to help the gospel spread.',
+		
+		'quote' => array(
+			'body' => 'Rupert Edwards (Lepton founder) wants to change the way churches leverage technology in the areas of giving and prayer.',
+			'cite_name' => 'Shamichael Hallman',
+			'cite_desc' => 'Campus Pastor at New Direction Christian Church in Memphis, TN',
+			'cite_link' => 'http://leadnet.org/code-for-the-kingdom-brad-russell-faithvillage/',
+			'cite_avatar' => 'sh.jpg',
+		),
+	);
+	
+	
+	
+		
 	$apps['fighter-verse'] = array(
 		
 		'date' => '2014-12-23',
