@@ -132,10 +132,15 @@
 		),
 		
 		'content' => array(
-			"",
+			"What we do online impacts our life offline.",
+			"A Microsoft report shows that 67% of kids hide online activities they don’t want their parents to see. Meanwhile, 70 percent of Christian men and 30% of Christian women say they struggle with Internet pornography. ",
+			"What if you could send a report of your Internet activity to a friend or mentor so you could talk about where you struggle online? What if you could see the sites your kids visit, so that you could have meaningful conversations with them?",
+			"<a href='http://www.covenanteyes.com/services/internet-accountability/?promocode=reformapp60' target='_blank'>Covenant Eyes Internet Accountability</a> monitors the websites visited, the search terms used, and the YouTube videos watched, listing them in an easy-to-read Report that is designed to start a conversation about healthy online habits.",
+			"Parents, see where your kids go online. Adults, reduce Internet temptations and protect the relationships you value most. You can even add filtering for an extra layer of protection.",
+			"Protect all your computers and mobile devices. Get 60 days free when you sign up with <a href='http://www.covenanteyes.com/?promocode=reformapp60' target='_blank'>this link</a> (or enter promo code 'reformapp60') by Dec. 31. (After this date, the link will provide 30 days free.)"
 		),
 		
-		'teaser' => '',
+		'teaser' => 'Be safe and accountable online.',
 		
 			'quote' => array(
 				'body' => 'I’ve used different methods of Internet accountability for the past decade, and in my experience there’s not a better single tool than Covenant Eyes software.',
