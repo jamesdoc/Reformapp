@@ -343,7 +343,7 @@
 }
 
 	.day-6 header h1{
-		background: url('../images/reformapp-text-black.png') no-repeat center center;
+		background: url('../images/reformapp-text-white.png') no-repeat center center;
 		background-size: contain;
 	}
 
@@ -353,11 +353,11 @@
 }
 
 	.day-6 nav a:hover{
-		color: #97b55f;
+		color: #ad6800;
 	}
 
 .day-6 .app-banner{
-	background-color: #97b55f;
+	background-color: #ad6800;
 	color: white;
 }
 
@@ -368,11 +368,11 @@
 }
 
 .day-6 .app-banner .grid-60{
-	background: #97b55f;
+	background: #ad6800;
 }
 
 .day-6 .app-screenshots img{
-	border: 1px solid #97b55f;
+	border: 1px solid #ad6800;
 }
 
 .day-6 #app-sharer{
@@ -380,24 +380,24 @@
 }
 
 .day-6 .quote-box{
-	border: 1px solid #97b55f;
+	border: 1px solid #ad6800;
 }
 
 .day-6 blockquote .circle{
-	border: 1px solid #97b55f;
+	border: 1px solid #ad6800;
 }
 
 .day-6 blockquote a{
-	color: #97b55f;
+	color: #ad6800;
 }
 
 
 .app-block.day-6 a{
-	background-color: #97b55f;
+	background-color: #ad6800;
 }
 
 	.app-block.day-6 a:hover{
-		background-color: #51632e;
+		background-color: #7b4a00;
 	}
 
 
