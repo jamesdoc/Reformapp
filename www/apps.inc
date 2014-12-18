@@ -178,16 +178,12 @@
 		
 		'teaser' => 'Explore God’s word wherever you are',
 		
-		/*
-			'quote' => array(
-				'body' => '...I let my 6 year old daughter give it a test run... She loved it and when it was my turn she actually took the iPad out of my hand so that she could show me how to play!',
-				'cite_name' => 'Jerry @ Relevant Gaming',
-				'cite_desc' => 'Children\'s Pastor and the founder of Relevant Gaming',
-				'cite_link' => 'http://relevant-gaming.com/david-vs-goliath-a-righteous-tale-review/',
-				'cite_avatar' => 'jrg.jpg',
-			),
-		*/
-		
+		'quote' => array(
+			'body' => 'This is a great development - the iPhone is an ideal medium for getting hold of bible reading notes - and these are great notes - so make the most of it... what\'s not to like?',
+			'cite_name' => 'Mark Meynell',
+			'cite_desc' => 'Senior Associate Minister, All Souls Langham Place',
+
+		),		
 	);
 	
 	
@@ -212,10 +208,12 @@
 		),
 		
 		'content' => array(
-			"",
+			"The Bible App™ by YouVersion offers 1000+ versions of the Bible for free in 700+ languages. It was among the first 200 free apps in Apple’s iTunes store launched on July 10, 2008. Today, over 160 million devices have downloaded the Bible App. For the last five consecutive years, Apple has ranked the Bible App among the top 100 free apps. Today it’s available for virtually every mobile device.",
+			"The Bible App also offers over 1000 Bible Plans, each with specific selections of God’s Word that can help anyone tackle anything. The plans provide a daily dose of Scripture along with devotionals to read, watch, and listen to. The YouVersion Community recently passed a monumental milestone, completing over 20 million Bible Plans. ",
+			"YouVersion is a ministry of LifeChurch.tv, a multi-site church based in Oklahoma. Meeting in 20 physical locations and globally online, the church is devoted to lead people around the world become fully devoted followers of Christ.",
 		),
 		
-		'teaser' => '',
+		'teaser' => 'Read through the bible, with your plan, your language, your version.',
 		
 		'quote' => array(
 			'body' => 'For millions of readers around the world, [the] wildly successful free Bible app, YouVersion, is changing how, where and when they read the Bible.',

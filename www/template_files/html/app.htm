@@ -42,7 +42,7 @@
 								</div></div>
 								{% endif %}
 								"{{ thisapp.quote.body }}"
-								<cite>{{ thisapp.quote.cite_name }}{% if thisapp.quote.cite_desc %}, <a href="{{ thisapp.quote.cite_link }}" target="_blank">{{ thisapp.quote.cite_desc }}</a>{% endif %}</cite>
+								<cite>{{ thisapp.quote.cite_name }}{% if thisapp.quote.cite_desc %}, {% if thisapp.quote.cite_link %}<a href="{{ thisapp.quote.cite_link }}" target="_blank">{% endif %}{{ thisapp.quote.cite_desc }}{% if thisapp.quote.cite_link %}</a>{% endif %}{% endif %}</cite>
 							</blockquote>
 						</li>
 					</ul>
