@@ -249,7 +249,7 @@
 		'content' => array(
 			"Theological discussions are always going on. From theologians in colleges to the family talking around the dinner table, while you may not always call it ‘theology’, tackling theological issues happens all the time. But, even after many years of faith, we can still have overlooked areas for discussion or failed to appreciate the significance of others",
 			"Created by <a href=\"http://www.west.org.uk/\" target='_blank'>Wales Evangelical School of Theology (WEST)</a>, the Union app is a gateway to modern and up to date theological resources designed to provide you with a starting point for thought and discussion. It gives you access to podcasts, articles, news and video content to help you further your understanding of theological issues and form a sound basis of faith as you continue to grow and develop as a Christian.",
-			"Union, and the Union app, intend to make theology accessible for all. As they say on their website: “Whether you’re a minister-in-training, a home-group leader, a student or simply hungry to know God and follow Christ, Union is for you.”",
+			"Union, and the Union app, intend to make theology accessible for all. As they say on their website: “<em>Whether you’re a minister-in-training, a home-group leader, a student or simply hungry to know God and follow Christ, Union is for you.</em>”",
 		),
 		
 		'teaser' => 'Learn and grow in your understanding of theology with Union.',
@@ -305,11 +305,11 @@
 	
 	
 		
-	$apps['fighter-verse'] = array(
+	$apps['fighter-verses'] = array(
 		
 		'date' => '2014-12-23',
-		'name' => 'Fighter Verse',
-		'slug' => 'fighter-verse',
+		'name' => 'Fighter Verses',
+		'slug' => 'fighter-verses',
 		'day_no' => '9',
 		
 		'url'  => 'http://fighterverses.com/',
