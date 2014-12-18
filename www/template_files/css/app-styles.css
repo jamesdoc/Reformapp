@@ -514,6 +514,10 @@
 	background: url('../images/headerback-day-8.jpg') repeat-y center center;
 }
 
+.content-block a{
+	color: #3c1585;
+}
+
 .day-8 .quote-box{
 	border: 1px solid #3c1585;
 }

@@ -208,9 +208,9 @@
 		),
 		
 		'content' => array(
-			"The Bible App™ by YouVersion offers 1000+ versions of the Bible for free in 700+ languages. It was among the first 200 free apps in Apple’s iTunes store launched on July 10, 2008. Today, over 160 million devices have downloaded the Bible App. For the last five consecutive years, Apple has ranked the Bible App among the top 100 free apps. Today it’s available for virtually every mobile device.",
-			"The Bible App also offers over 1000 Bible Plans, each with specific selections of God’s Word that can help anyone tackle anything. The plans provide a daily dose of Scripture along with devotionals to read, watch, and listen to. The YouVersion Community recently passed a monumental milestone, completing over 20 million Bible Plans. ",
-			"YouVersion is a ministry of LifeChurch.tv, a multi-site church based in Oklahoma. Meeting in 20 physical locations and globally online, the church is devoted to lead people around the world become fully devoted followers of Christ.",
+			"It’s a fairly safe bet that you’ve got an old bible squirrelled away somewhere in your house.  Perhaps one that that your parents bought for you as a child, or maybe one given to you by a friend when you were first exploring Christianity... Even if you’ve bought a new one for regular use, that old first copy has something special about it.",
+			"In the rush of day to day life though, it’s hard to carry around a large book with you, and often completely inconvenient to do so. Today’s app ‘Bible’ by YouVersion makes using your smartphone as a bible easy, quick and always accessible.As the name implies - it’s it your version. Whatever translation of the bible you want, in many languages, it is all within the app.",
+			"The team at YouVersion have put together a high quality Bible application for use on your smartphone or tablet.  It’s well built, beautifully designed and has many features to aid your reading and study of the bible on the go. Whether you want to stream an audio version, add your own notes or simply browse an activity list made up of your friends (where you all can share your readings, bookmarks and notes), YouVersion is about making the experience of reading God’s word easier."
 		),
 		
 		'teaser' => 'Read through the bible, with your plan, your language, your version.',
@@ -247,10 +247,12 @@
 		),
 		
 		'content' => array(
-			"",
+			"Theological discussions are always going on. From theologians in colleges to the family talking around the dinner table, while you may not always call it ‘theology’, tackling theological issues happens all the time. But, even after many years of faith, we can still have overlooked areas for discussion or failed to appreciate the significance of others",
+			"Created by <a href=\"http://www.west.org.uk/\" target='_blank'>Wales Evangelical School of Theology (WEST)</a>, the Union app is a gateway to modern and up to date theological resources designed to provide you with a starting point for thought and discussion. It gives you access to podcasts, articles, news and video content to help you further your understanding of theological issues and form a sound basis of faith as you continue to grow and develop as a Christian.",
+			"Union, and the Union app, intend to make theology accessible for all. As they say on their website: “Whether you’re a minister-in-training, a home-group leader, a student or simply hungry to know God and follow Christ, Union is for you.”",
 		),
 		
-		'teaser' => '',
+		'teaser' => 'Learn and grow in your understanding of theology with Union.',
 		
 		/*
 			'quote' => array(
